@@ -13,6 +13,11 @@ public class OperadorXou {
 		temperatura = leitor.nextDouble();
 		
 		//Aqui é preciso criar um if que verifique as duas condições para que o os ventiladores sejam ligados ou não
+		if (umidade>70 ^ temperatura>26) {
+			System.out.println("Ligar os Ventiladores");
+		}else {
+			System.out.println("Entrar em contato com o agronomo");
+		}
 		
 		leitor.close();
 		
